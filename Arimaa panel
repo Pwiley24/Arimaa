@@ -1,0 +1,34 @@
+ArimaaPanel
+
+	- Paints a 8x8 board
+	- 7 lines up and across
+	- space lines equal distance
+	- switches off black and white each square
+	
+	
+	public class ArimaaPanel extends JPanel {
+		BOARD_HEIGHT
+		
+		
+	
+	}
+	
+	public void paintComponent (Graphics g){
+		super.paintComponent(g)
+		paint back of panel white
+		repeat 7 times:
+			create a line to go across board
+			start line at (0, i + BOARD_HEIGHT)
+			
+		repeat 7 times:
+			create a line to go up board
+			start line at (i + BOARD_HEIGHT, 0)
+		
+		draw four traps:
+			create red square(x = acrosslinelength/4, y = acrosslinelength/4, w/h= across line length/8)
+							 (x = acrosslinelenth/4 * 2.5,
+							 (x = acrosslinelength/4, y = acrosslinelenth/4 * 2.5
+							 (x = acrosslinelength/4 * 2.5
+							 
+		
+	}
