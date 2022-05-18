@@ -8,6 +8,7 @@ Main Class
 		
 		public class Arimaa implement ActionListener MouseListener (){
 			JFrame panel = "Arimaa"
+			Array[8][8] of buttons = JButtons (for board)
 			JTextField player1 = "player 1"
 			JTextField player2 = "player 2"
 			String piece = null
@@ -21,9 +22,7 @@ Main Class
 		}
 		
 		
-		mouserelease{
-			if piece does not equal null 
-		}
+		
 		
 		buttonClicked{
 			if label is elephant
