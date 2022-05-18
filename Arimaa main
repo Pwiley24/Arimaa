@@ -1,0 +1,36 @@
+Main Class
+
+	When first player clicks on one of their pieces to place on board:
+		-  change is clicked on to true
+		- if setup is true and player clicks on a board square in their first two rows. 
+		repaint board with piece on that square.
+		- repeat until all pieces are placed (16 times).
+		
+		public class Arimaa implement ActionListener MouseListener (){
+			JFrame panel = "Arimaa"
+			JTextField player1 = "player 1"
+			JTextField player2 = "player 2"
+			String piece = null
+			JLabel elephant = elephantimage
+			//continue for all other pieces for each player
+			JButton = "elephant"
+			//continue for all other piece types
+			
+			
+		
+		}
+		
+		
+		mouserelease{
+			if piece does not equal null 
+		}
+		
+		buttonClicked{
+			if label is elephant
+				set piece to "elephant"
+			else if //continue with all other pieces
+			
+				
+		
+		}
+		
