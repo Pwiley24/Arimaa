@@ -11,7 +11,7 @@ Main Class
 			Array[8][8] of buttons = JButtons (for board)
 			JTextField player1 = "player 1"
 			JTextField player2 = "player 2"
-			String piece = null
+			boolean setup = true
 			JLabel elephant = elephantimage
 			//continue for all other pieces for each player
 			JButton = "elephant"
@@ -21,14 +21,36 @@ Main Class
 		
 		}
 		
+		mouseRelease{
+			if(e.equals JLabel elepahnt and player1 is true)
+				set image to elephant image
+			else is player 2 is true and Jlabel elephant
+				set image to elephant image (differnet color)
+		
+		}
+		
 		
 		
 		
 		buttonClicked{
-			if label is elephant
-				set piece to "elephant"
-			else if //continue with all other pieces
+			if button is on the array{
+				if(checkIf possible (button) == true){
+					
+				}
+			}
 			
+			
+		check if possibel (button){
+			if set up is true 
+				if button is not in first two rows
+					return false
+				
+			else if button has an image already on it
+				return false
+			
+			
+			return true
+		}
 				
 		
 		}
