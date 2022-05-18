@@ -1,0 +1,53 @@
+Arimaa:
+Goal: get rabbit to opponent end; trap all rabbits; block all pieces of opponent
+setup: 
+	- 8x8 board
+	- (strongest to weakest) One elephant, one camel, two horses, two dogs, two cats, eight rabbits.
+	- four traps: c6, f6, c3, f3
+	- players can arrange pieces however they want on their first two rows.
+	- players get to make four moves in a turn (can be split between different pieces) 
+	(can only move left, right, up, down) (rabbits can't move back).
+
+pulling/pushing:
+ 	- Elephants can't be pulled/pushed
+ 	- only weaker pieces can be pushed (dog can't push dog but can push cat).
+ 	
+ Traps:
+ 	- All pieces can be trapped
+ 	- pieces can be pushed onto traps or go willingly.
+ 	- trapped if on the trap and no friend (same team piece) to the left, right, above, or below it.
+ 	- once trapped remove from board.
+ 	
+ Must have winner:
+ 	- no loops- can't repeat the same move (must keep track of the last move made by each player)
+ 	(if both player's next moves are the same then don't allow them to make it).
+ 	
+ Freezing:
+ 	- when weaker pieces are left, right, above, below a stronger opposing piece.
+ 	- can't be frozen if friend is adjacent (left, right, above, below, diagonals) to the 
+ 	piece in question.
+ 	
+ For Coding:
+ 	- Classes for each piece: 
+ 		- Elephant: strongest (rank 1), can move in all four directions (true).
+ 		- Camel: rank 2, true
+ 		- horses: rank 3, true
+ 		- dogs: rank 4, true
+ 		- cats: rank 5, true
+ 		- rabbits: rank 6, false (not backwards)
+ 	- main class for setup and game loop- Arimaa:
+ 		- let player1 set up pieces
+ 		- let player2 set up pieces
+ 		- player 1 goes makes first move
+ 		- game loop (while no winner)
+ 		- player1 and player2 boolean for turn
+ 		- ask for input
+ 		- check if valid (method: check if they are frozen)
+ 		- do move if valid
+ 		- check for push/pull (method)
+ 		- check for traps (method)
+ 		- check for win (method)
+ 		- remember this move as last move made by this player (for repeats)
+ 		- switch player turn after four moves
+ 	- Drawing class
+ 	
