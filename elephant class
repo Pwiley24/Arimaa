@@ -1,0 +1,26 @@
+do the same setup for all other pieces, but with corresponding ranks and rabbits "moveBack" = false
+
+Public class elephant {
+	rank = 1
+	moveBack = true
+	player1 = true
+	elephantImage = file of no background elephant on computer
+	x = 0
+	y = 0
+	
+	
+	
+}
+
+public elephant(int newx, int newy, boolean player){
+	x = newx
+	y = newy
+	player1 = player
+}
+
+//getters and setters for x and y and player1
+
+public paintMethod(Graphics g){
+	g.drawImage(elephantImage, x, y
+}
+
